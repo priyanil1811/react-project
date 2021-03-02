@@ -1,0 +1,9 @@
+body {
+	margin: 0;
+	background-color: lightgrey;
+    font: 1em helvetica, arial, sans-serif;
+    background-image: url('./../img/bg.jpg');
+}
+h1 {
+    color: #ffffff;
+}
