@@ -21,9 +21,8 @@ const Ratingstar = (rating) => {
     }
 
     return (
-            <span dangerouslySetInnerHTML={{ __html: ratingHtml }} />
+        <span dangerouslySetInnerHTML={{ __html: ratingHtml }} />
     )
-	
 }
 
 export default Ratingstar
