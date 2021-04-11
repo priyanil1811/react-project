@@ -1,10 +1,15 @@
 import React from 'react'
 import 'css/App.css'
-import ProductList from 'components/productList'
-import ProductFilter from 'components/ProductFilter'
+import ProductContext from 'contexts/product'
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
-import ProductContext from 'contexts/product'
+import PageShop from 'pages/PageShop'
+import PageHome from 'pages/PageHome'
+import PageContact from 'pages/PageContact'
+import PageAbout from 'pages/PageAbout'
+import Page404 from 'pages/Page404'
+
 
 const App = () => {
 		const products = [
@@ -212,13 +217,22 @@ const App = () => {
 
 	return (
 		<ProductContext.Provider value={products}>
-			<>
+			<Router>
 				<Header />
-							
-				
 
+				<main className="products">
+					
+					<Switch>
+						<Route exact path="/" component={PageHome} />
+						<Route path="/about" component={PageAbout} />
+						<Route path="/contact" component={PageContact} />
+						<Route path="/shop" component={PageShop} />
+						<Route path="*" component={Page404} />
+					</Switch>
+					
+				</main>	
 				<Footer />
-			</>
+			</Router>
 		</ProductContext.Provider>
 	)
 } 

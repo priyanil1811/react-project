@@ -8,8 +8,8 @@ const PageShop = () => {
     const products = useContext(ProductContext)
 
     return (
-        <main className="products">
-				
+        
+		<>		
             <header className="heading">
                 <h1>Sale on Wedding Dresses</h1>
             </header>
@@ -17,8 +17,7 @@ const PageShop = () => {
             <ProductFilter />
 
             <ProductList products={products} />
-
-        </main>
+        </>
       )
 }
 
