@@ -5,12 +5,14 @@ import ProductColors from 'components/ProductColors'
 const Product = (product) => {
     
     const productInfo = product.product;
+    const productImg = require(`img/${productInfo.image}`).default;
+
 
 	return (
 
         <article className="product">
             <header>
-                <img src={"src/img/" + productInfo.image} alt="Product Image" />
+                <img src={productImg} alt="Product Image" />
                 <h3>{productInfo.title}</h3>
                 <data value={productInfo.newPrice}><del>${productInfo.oldPrice}</del> <ins>${productInfo.newPrice}</ins></data>
                 <p>{productInfo.description}</p>

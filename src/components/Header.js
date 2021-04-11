@@ -5,7 +5,7 @@ const Header = () => {
 
 	return (
 		<header className="page-header">
-            <a href="index.html" className="logo">FASHION</a>
+            <Link to="/" className="logo">FASHION</Link>
 
             <input type="checkbox" id="check" />
                 <label htmlFor="check" className="nav-toggle">
