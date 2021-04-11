@@ -4,6 +4,7 @@ import ProductList from 'components/productList'
 import ProductFilter from 'components/ProductFilter'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
+import ProductContext from 'contexts/product'
 
 const App = () => {
 		const products = [
@@ -210,24 +211,15 @@ const App = () => {
 		];
 
 	return (
-		<>
-			<Header />
-						
-			<main className="products">
+		<ProductContext.Provider value={products}>
+			<>
+				<Header />
+							
 				
-				<header className="heading">
-                    <h1>Sale on Wedding Dresses</h1>
-                </header>
 
-				<ProductFilter />
-
-      			<ProductList products={products} />
-
-    		</main>
-
-			<Footer />
-	  	</>
-		
+				<Footer />
+			</>
+		</ProductContext.Provider>
 	)
 } 
 
