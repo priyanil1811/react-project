@@ -11,12 +11,6 @@ const ProductFilter = () => {
 							<legend>Colour</legend>
 							<ul className="filter-list">
 							<li>
-								<label className="container" htmlFor="maroon">Maroon
-								<input type="checkbox" name="colour" value="maroon" id="maroon" />
-								<span className="checkmark"></span>
-								</label>
-							</li>
-							<li>
 								<label className="container" htmlFor="green">Green
 								<input type="checkbox" name="colour" value="green" id="green" />
 								<span className="checkmark"></span>
@@ -35,8 +29,26 @@ const ProductFilter = () => {
 								</label>
 							</li>
 							<li>
-								<label className="container" htmlFor="purple">Purple
-								<input type="checkbox" name="colour" value="purple" id="purple" />
+								<label className="container" htmlFor="white">White
+								<input type="checkbox" name="colour" value="white" id="white" />
+								<span className="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label className="container" htmlFor="black">Black
+								<input type="checkbox" name="colour" value="black" id="black" />
+								<span className="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label className="container" htmlFor="blue">Blue
+								<input type="checkbox" name="colour" value="blue" id="blue" />
+								<span className="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label className="container" htmlFor="yellow">Yellow
+								<input type="checkbox" name="colour" value="yellow" id="yellow" />
 								<span className="checkmark"></span>
 								</label>
 							</li>
