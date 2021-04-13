@@ -1,4 +1,5 @@
 import React from 'react'
+import 'css/PageContact.css'
 
 const PageContact = () => {
   return (
@@ -6,7 +7,7 @@ const PageContact = () => {
       <h1>Contact Us</h1>
       <p>For all enquiries, please contact us using the form below.</p>
 
-      <div>
+      <div className="contactForm">
         <form action="/action_page.php">
           <label htmlFor="name">Your Name</label>
           <input type="text" id="name" name="yourname" placeholder="Your name.." />
