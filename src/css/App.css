@@ -64,24 +64,33 @@ p {
     text-align: center;
 }
 
-.pages {
+.pages ul {
     display: flex;
     justify-content: center;
 }
 
-.pages > li, .social > li, .legal > li {
+.pages ul > li, .social > li, .legal > li {
     margin: calc(var(--pad-and-gap) / 2);
 }
 
-.pages > li > a, .product header a {
+.pages ul > li > a, .product header a {
     border: 1px solid var(--secondary-clr-ltr);
     padding: 3px 5px;
     background: #eeeeee;
 }
 
-.pages > li > a:hover, .product header a:hover {
+.pages ul > li > a:hover, .product header a:hover, .pages ul > li.ant-pagination-item-active a {
     background-color: var(--main-clr-lt);
     color: var(--ntrl-clr-lt);
+}
+
+.pages ul > li > button {
+    margin: 0;
+    padding: 4px 10px;
+}
+
+.pages ul > li.ant-pagination-disabled button {
+    background-color: var(--secondary-clr-lt);
 }
 
 .product header dl {
