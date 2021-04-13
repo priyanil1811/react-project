@@ -56,7 +56,7 @@ const App = () => {
 			{
 				id: 5,
 				image: "lehenga-5.jpeg",
-				title: "Pink And White Lehenga",
+				title: "Pink N White Lehenga",
 				oldPrice: 250.00,
 				newPrice: 199.00,
 				description: "Authentic beauty can come out of your dressing style with this pink...",
@@ -76,7 +76,7 @@ const App = () => {
 			{
 				id: 7,
 				image: "lehenga-7.jpeg",
-				title: "White and gold Lehenga Choli",
+				title: "White N Gold Lehenga Choli",
 				oldPrice: 220.00,
 				newPrice: 200.00,
 				description: "Designer net bridal lehenga choli in white color. Comes with golden border...",
