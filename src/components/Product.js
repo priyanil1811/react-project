@@ -1,6 +1,7 @@
 import React from 'react'
 import Ratingstar from 'components/Ratingstar'
 import ProductColors from 'components/ProductColors'
+import ProductSize from 'components/ProductSize'
 
 const Product = (product) => {
     
@@ -24,28 +25,11 @@ const Product = (product) => {
             <form>
                 <fieldset>
                     <legend>Colours</legend>
-                    <ProductColors productColors={productInfo.colors}/>
+                    <ProductColors productColors={productInfo.colors} />
                 </fieldset>
                 <fieldset>
                     <legend>Sizes</legend>
-                    <ol>
-                        <label className="container radio-container">S
-                            <input type="radio" name="size" value="s" defaultChecked={true} />
-                            <span className="checkmark roundmark"></span>
-                        </label>
-                        <label className="container radio-container">M
-                            <input type="radio" name="size" value="m" />
-                            <span className="checkmark roundmark"></span>
-                        </label>
-                        <label className="container radio-container">L
-                            <input type="radio" name="size" value="l" />
-                            <span className="checkmark roundmark"></span>
-                        </label>
-                        <label className="container radio-container">XL
-                            <input type="radio" name="size" value="xl" />
-                            <span className="checkmark roundmark"></span>
-                        </label>
-                    </ol>
+                    <ProductSize ProductSize={productInfo.size} />
                 </fieldset>
           </form>
             <footer>

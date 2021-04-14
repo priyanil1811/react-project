@@ -21,7 +21,8 @@ const App = () => {
 				newPrice: 260.00,
 				description: "Designer cotton bridal lehenga choli in red color. It comes with silk fabric...",
 				rating: '4.5',
-				colors: ["Red", "White", "Orange"]
+				colors: ["Red", "White", "Orange"],
+				size: ["XS", "M", "L"]
 			},
 			{
 				id: 2,
@@ -31,7 +32,8 @@ const App = () => {
 				newPrice: 299.00,
 				description: "It is paired with a matching color heavily embroidered cotton choli...",
 				rating: '4.5',
-				colors: ["Red", "White", "Orange"]
+				colors: ["Red", "White", "Orange"],
+				size: ["XS", "S", "M", "L"]
 			},
 			{
 				id: 3,
@@ -41,7 +43,8 @@ const App = () => {
 				newPrice: 225.00,
 				description: "Multicolor silk lehenga comes with a red silk heavily embroidered choli and ...",
 				rating: '5.0',
-				colors: ["Orange", "Green", "White"]
+				colors: ["Orange", "Green", "White"],
+				size: ["S", "M", "L"]
 			},
 			{
 				id: 4,
@@ -51,7 +54,8 @@ const App = () => {
 				newPrice: 130.00,
 				description: "Blue velvet lehenga choli with zari embroidery work all over. Comes with...",
 				rating: '4.0',
-				colors: ["Blue", "White", "Orange"]
+				colors: ["Blue", "White", "Orange"],
+				size: ["XS", "S", "M", "L"]
 			},
 			{
 				id: 5,
@@ -61,7 +65,8 @@ const App = () => {
 				newPrice: 199.00,
 				description: "Authentic beauty can come out of your dressing style with this pink...",
 				rating: '4.0',
-				colors: ["White", "Red", "Orange"]
+				colors: ["White", "Red", "Orange"],
+				size: ["S", "M", "L", "XL"]
 			},
 			{
 				id: 6,
@@ -71,7 +76,8 @@ const App = () => {
 				newPrice: 229.00,
 				description: "Look beautiful in red color net bridal lehenga with thread embroidery work...",
 				rating: '4.0',
-				colors: ["Red", "Green", "Orange"]
+				colors: ["Red", "Green", "Orange"],
+				size: ["S", "M", "XL"]
 			},
 			{
 				id: 7,
@@ -81,7 +87,8 @@ const App = () => {
 				newPrice: 200.00,
 				description: "Designer net bridal lehenga choli in white color. Comes with golden border...",
 				rating: '3.5',
-				colors: ["White", "Red", "Orange"]
+				colors: ["White", "Red", "Orange"],
+				size: ["XS", "S", "M", "L"]
 			},
 			{
 				id: 8,
@@ -91,7 +98,8 @@ const App = () => {
 				newPrice: 225.00,
 				description: "Embroidered Raw Silk Semi-Stitched Lehenga & Unstitched Choli...",
 				rating: '4.0',
-				colors: ["Orange", "White", "Blue"]
+				colors: ["Orange", "White", "Blue"],
+				size: ["XS", "S", "M", "L"]
 			},
 			{
 				id: 9,
@@ -101,7 +109,8 @@ const App = () => {
 				newPrice: 225.00,
 				description: "Look super gorgeous in this red colored net bridal lehenga in satin...",
 				rating: '4.5',
-				colors: ["Red", "Green", "White"]
+				colors: ["Red", "Green", "White"],
+				size: ["XS", "S", "M", "L", "XL"]
 			},
 			{
 				id: 10,
@@ -111,7 +120,8 @@ const App = () => {
 				newPrice: 130.00,
 				description: "Black colour crepe fabric party wear lehenga choli comes with matching...",
 				rating: '3.0',
-				colors: ["Black", "Blue", "Orange"]
+				colors: ["Black", "Blue", "Orange"],
+				size: ["XS", "S", "L"]
 			},
 			{
 				id: 11,
@@ -121,7 +131,8 @@ const App = () => {
 				newPrice: 199.00,
 				description: "Yellow color art silk lehenga has been beautified with stone and thread work...",
 				rating: '4.0',
-				colors: ["Black", "Red", "Orange"]
+				colors: ["Black", "Red", "Orange"],
+				size: ["XS", "M", "L"]
 			},
 			{
 				id: 12,
@@ -131,7 +142,8 @@ const App = () => {
 				newPrice: 200.00,
 				description: "This delightful diva accoutre features unique styling and unusual material...",
 				rating: '3.5',
-				colors: ["Green", "Red", "Orange"]
+				colors: ["Green", "Red", "Orange"],
+				size: ["S", "M", "L"]
 			},
 			{
 				id: 13,
@@ -141,7 +153,8 @@ const App = () => {
 				newPrice: 220.00,
 				description: "Light pink and yellow silk a line lehenga with embroidered floral patterns...",
 				rating: '4.5',
-				colors: ["Yellow", "Red", "Orange"]
+				colors: ["Yellow", "Red", "Orange"],
+				size: ["S", "M", "XL"]
 			},
 			{
 				id: 14,
@@ -151,7 +164,8 @@ const App = () => {
 				newPrice: 169.00,
 				description: "Gorgeous Teal Lehenga Choli is enhanced with all over Zari and...",
 				rating: '3.0',
-				colors: ["Green", "Red", "Orange"]
+				colors: ["Green", "Red", "Orange"],
+				size: ["XS", "S", "M", "L", "XL"]
 			},
 			{
 				id: 15,
@@ -161,7 +175,8 @@ const App = () => {
 				newPrice: 175.00,
 				description: "Peacock Blue Embroidered Wedding Lehenga Choli will make you look...",
 				rating: '3.0',
-				colors: ["Blue", "Green", "Orange"]
+				colors: ["Blue", "Green", "Orange"],
+				size: ["XS", "S", "M", "L"]
 			},
 			{
 				id: 16,
@@ -171,7 +186,8 @@ const App = () => {
 				newPrice: 229.00,
 				description: "Look beautiful in red color net bridal lehenga with thread embroidery work...",
 				rating: '4.5',
-				colors: ["Blue", "Green", "Orange"]
+				colors: ["Blue", "Green", "Orange"],
+				size: ["XS", "S", "M", "XL"]
 			},
 			{
 				id: 17,
@@ -181,7 +197,8 @@ const App = () => {
 				newPrice: 199.00,
 				description: "Aqua blue art silk a line lehenga with embroidered foliage,floral patterns...",
 				rating: '3.5',
-				colors: ["Blue", "Green", "Red"]
+				colors: ["Blue", "Green", "Red"],
+				size: ["S", "M", "L"]
 			},
 			{
 				id: 18,
@@ -191,7 +208,8 @@ const App = () => {
 				newPrice: 175.00,
 				description: "This sea green net lehenga choli add the sense of elegant and glamorous...",
 				rating: '4.0',
-				colors: ["Blue", "Black", "Orange"]
+				colors: ["Blue", "Black", "Orange"],
+				size: ["XS", "S", "M"]
 			},
 			{
 				id: 19,
@@ -201,7 +219,8 @@ const App = () => {
 				newPrice: 220.00,
 				description: "The Lehenga Choli is weaved together with embroidered motifs sequin work...",
 				rating: '4.0',
-				colors: ["Orange", "Green", "Blue"]
+				colors: ["Orange", "Green", "Blue"],
+				size: ["XS", "S", "M", "L"]
 			},
 			{
 				id: 20,
@@ -211,7 +230,8 @@ const App = () => {
 				newPrice: 229.00,
 				description: "Look beautiful in Green color net bridal lehenga with embroidery work...",
 				rating: '3.5',
-				colors: ["Green", "Purple", "Orange"]
+				colors: ["Green", "Purple", "Orange"],
+				size: ["XS", "S", "M", "L", "XL"]
 			}
 		];
 
