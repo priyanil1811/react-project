@@ -22,10 +22,7 @@ const Header = () => {
                 </ul>
             </nav>
 
-            <form className="search">
-                <input type="search" name="find" id="find" placeholder="Search products" />
-                <button type="button"><i className="fas fa-search"></i></button>
-            </form>
+            <form></form>
 
             <ul className="your-products">
                 <li><a href="#"><i className="far fa-heart"></i></a></li>

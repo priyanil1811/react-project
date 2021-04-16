@@ -1,0 +1,11 @@
+.aboutContainer {
+    margin-top: 50px;
+    padding: 1em 2em;
+    background-color: #eee;
+}
+
+.errorBtn {
+    color: white;
+    background-color: #820100;
+    padding: 0.5em;
+}
