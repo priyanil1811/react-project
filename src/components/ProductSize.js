@@ -26,7 +26,7 @@ const ProductSize = (ProductSize) => {
     });
 
     return (
-        <ol dangerouslySetInnerHTML={{ __html: productSzHtml }} />
+        <ul dangerouslySetInnerHTML={{ __html: productSzHtml }} />
     )
 }
 

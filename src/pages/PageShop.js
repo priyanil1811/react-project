@@ -12,18 +12,18 @@ const PageShop = () => {
       query: ``,
       colors: [],
       size: [],
-      fabric: `all`,
+      rating: `all`,
       sortBy: `none`
     })
 
     useEffect(() => {
-    
+      
       // Creat a clone Array
       let filteredProducts = products;
-  
+    
       // Check all the filters
       if (filters.query)
-        filteredProducts = filteredProducts.filter((prod) => prod.name.toLowerCase().includes(filters.query.toLowerCase().trim()))
+        filteredProducts = filteredProducts.filter((prod) => prod.title.toLowerCase().includes(filters.query.toLowerCase().trim()))
       if (filters.colors.length !== 0) {
         
         filteredProducts = filteredProducts.filter((prod) => filters.colors.some((clr) => prod.colors.includes(String(clr)) ) )
@@ -33,8 +33,12 @@ const PageShop = () => {
         
         filteredProducts = filteredProducts.filter((prod) => filters.size.some((sz) => prod.size.includes(String(sz)) ) )
       }
-        
-      console.log(filters);
+
+      if (filters.rating !== `all`) {
+      filteredProducts = filteredProducts.filter((prod) => Number(prod.rating) >= Number(filters.rating))
+      }
+      
+      
       // Sort if appropriate
       switch (filters.sortBy) {
         case `price-high`:
@@ -44,11 +48,12 @@ const PageShop = () => {
           filteredProducts.sort((a, b) => b.newPrice - a.newPrice)
           break;
       }
-  
+      
       // Assign the filtered products to the result state
       setProductResult(filteredProducts)
   
-    }, [filters])
+     
+    }, [filters, products])
 
 
     return (

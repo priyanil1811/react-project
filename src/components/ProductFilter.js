@@ -43,10 +43,27 @@ const ProductFilter = ({filters, setFilters}) => {
 		})
 	  }
 
+	  const handleRatingChange = (event)=>{
+		setFilters({
+		  ...filters,
+		  rating: event.target.value
+		})
+	  }
+
 	return (
 		<form className="filters">
 					<h2>Filters</h2>
 
+					<div className="filter-options">
+						<fieldset className="search">
+							<input type="search" id="find" placeholder="Search products" value={filters.query} onChange={(event)=>{
+								setFilters({
+									...filters,
+									query: event.target.value
+								})
+								}} />
+						</fieldset>
+					</div>
 					<div className="filter-options">
 						<fieldset>
 							<legend>Colour</legend>
@@ -131,36 +148,36 @@ const ProductFilter = ({filters, setFilters}) => {
 							</ul>
 						</fieldset>
 						<fieldset>
-							<legend>Fabric</legend>
+							<legend>Rating</legend>
 							<ul className="filter-list">
 							<li>
-								<label className="container" htmlFor="slik">Slik
-								<input type="checkbox" name="colour" value="slik" id="slik" />
-								<span className="checkmark"></span>
+								<label className="container radio-container"  htmlFor="1">1+
+								<input type="radio" name="rating" value="1" id="1" onClick={handleRatingChange} />
+								<span className="checkmark roundmark"></span>
 								</label>
 							</li>
 							<li>
-								<label className="container" htmlFor="net">Net
-								<input type="checkbox" name="colour" value="net" id="net" />
-								<span className="checkmark"></span>
+								<label className="container radio-container" htmlFor="2">2+
+								<input type="radio" name="rating" value="2" id="2" onClick={handleRatingChange} />
+								<span className="checkmark roundmark"></span>
 								</label>
 							</li>
 							<li>
-								<label className="container" htmlFor="cotton">Cotton
-								<input type="checkbox" name="colour" value="cotton" id="cotton" />
-								<span className="checkmark"></span>
+								<label className="container radio-container" htmlFor="3">3+
+								<input type="radio" name="rating" value="3" id="3" onClick={handleRatingChange} />
+								<span className="checkmark roundmark"></span>
 								</label>
 							</li>
 							<li>
-								<label className="container" htmlFor="polyster">Polyster
-								<input type="checkbox" name="colour" value="polyster" id="polyster" />
-								<span className="checkmark"></span>
+								<label className="container radio-container" htmlFor="4">4+
+								<input type="radio" name="rating" value="4" id="4" onClick={handleRatingChange} />
+								<span className="checkmark roundmark"></span>
 								</label>
 							</li>
 							<li>
-								<label className="container" htmlFor="velvet">Velvet
-								<input type="checkbox" name="colour" value="velvet" id="velvet" />
-								<span className="checkmark"></span>
+								<label className="container radio-container" htmlFor="5">5
+								<input type="radio" name="rating" value="5" id="5" onClick={handleRatingChange} />
+								<span className="checkmark roundmark"></span>
 								</label>
 							</li> 
 							</ul>
