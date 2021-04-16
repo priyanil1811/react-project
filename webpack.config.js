@@ -22,7 +22,7 @@ module.exports = {
 	},
 	devServer: {
 		historyApiFallback: true,
-	  },
+	},
 	output: {
 		publicPath: `/`
 	},
@@ -39,6 +39,7 @@ module.exports = {
 			contexts: path.resolve(__dirname, 'src/contexts'),
 			css: path.resolve(__dirname, 'src/css/'),
 			img: path.resolve(__dirname, 'src/img/'),
+			util: path.resolve(__dirname, 'src/util'),
 		}
 	}
 }
