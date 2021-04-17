@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { useHistory } from "react-router-dom"
 
-const ProductFilter = ({filters, setFilters}) => {
+const ProductFilter = ({filters, setFilters, search}) => {
+
+	if(search == null || search == undefined)
+		search = '';
+
+	const [query, setQuery] = useState(search)
+	const history = useHistory()
 
 	const handleColorChange = (event)=>{
 		if(filters.colors.includes(event.target.value)) {
@@ -50,17 +57,28 @@ const ProductFilter = ({filters, setFilters}) => {
 		})
 	  }
 
+	  useEffect(() => {
+		const params = new URLSearchParams()
+		if (query) {
+		  params.append("query", query)
+		} else {
+		  params.delete("query")
+		}
+
+		history.push({search: params.toString()})
+	  }, [query, history])
+
 	return (
 		<form className="filters">
 					<h2>Filters</h2>
 
 					<div className="filter-options">
 						<fieldset className="search">
-							<input type="search" id="find" placeholder="Search products" value={filters.query} onChange={(event)=>{
-								setFilters({
-									...filters,
-									query: event.target.value
-								})
+							<input type="search" id="find" placeholder="Search products" value={search} onChange={(event)=>{
+								
+
+								 setQuery(event.target.value)
+
 								}} />
 						</fieldset>
 					</div>

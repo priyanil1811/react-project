@@ -1,15 +1,17 @@
 import React, {useContext, useEffect, useState} from 'react'
+import {useLocation} from 'react-router-dom'
 import ProductContext from 'contexts/product'
 import ProductList from 'components/ProductList'
 import ProductFilter from 'components/ProductFilter'
 
-const PageShop = () => { 
+const PageShop = () => {
 
+    const params = new URLSearchParams(useLocation().search)
+    const query = params.get("query");
     const products = useContext(ProductContext)
     const [productResult, setProductResult] = useState(products)
 
     const [filters, setFilters] = useState({
-      query: ``,
       colors: [],
       size: [],
       rating: `all`,
@@ -18,12 +20,14 @@ const PageShop = () => {
 
     useEffect(() => {
       
+      
       // Creat a clone Array
       let filteredProducts = products;
+
     
       // Check all the filters
-      if (filters.query)
-        filteredProducts = filteredProducts.filter((prod) => prod.title.toLowerCase().includes(filters.query.toLowerCase().trim()))
+      if (query)
+        filteredProducts = filteredProducts.filter((prod) => prod.title.toLowerCase().includes(query.toLowerCase().trim()))
       if (filters.colors.length !== 0) {
         
         filteredProducts = filteredProducts.filter((prod) => filters.colors.some((clr) => prod.colors.includes(String(clr)) ) )
@@ -53,7 +57,7 @@ const PageShop = () => {
       setProductResult(filteredProducts)
   
      
-    }, [filters, products])
+    }, [filters, products, query])
 
 
     return (
@@ -63,7 +67,7 @@ const PageShop = () => {
                 <h1>Sale on Wedding Dresses</h1>
             </header>
 
-            <ProductFilter filters={filters} setFilters={setFilters} />
+            <ProductFilter filters={filters} setFilters={setFilters} search={query} />
 
             <ProductList products={productResult} />
         </>
