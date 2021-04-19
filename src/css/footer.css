@@ -1,0 +1,41 @@
+.page-footer {
+    background-color: var(--secondary-clr-ltr);
+    float: left;
+    width: 100%;
+    padding-top: var(--pad-and-gap);
+    margin-top: var(--pad-and-gap);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social i {
+    font-size: var(--h2-fs);
+    color: var(--secondary-clr-dk);
+}
+
+.legal {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;    
+}
+
+
+@media only screen and (min-width: 70em) {
+    .legal {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 120em) {
+    .page-header, .products, .page-footer {
+        max-width: 120em;
+        margin: 0 auto;
+    }
+}

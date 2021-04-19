@@ -1,6 +1,7 @@
 import React from 'react'
 import { Pagination } from 'antd'
 import Product from 'components/product'
+import 'css/productList.css'
 const {useState} = React
 
 

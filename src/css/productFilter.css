@@ -1,0 +1,134 @@
+.filter-options {
+    margin-bottom: 20px;
+}
+
+.search {
+    grid-row: 2;
+    grid-column: 1 / 5;
+    margin-top: calc(var(--pad-and-gap) / 2);
+}
+
+#find {
+    width: 90%;
+}
+
+.filter-list {
+    display: flex;
+}
+
+#sort {
+    margin-left: calc(var(--pad-and-gap) / 2);
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 22px;
+    padding-right: 7px;
+    cursor: pointer;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: var(--secondary-clr-ltr);
+}
+
+.container:hover input ~ .checkmark {
+    background-color: var(--secondary-clr);
+}
+  
+.container input:checked ~ .checkmark {
+    background-color: var(--main-clr);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid var(--ntrl-clr-lt);
+    border-width: 0 2px 2px 0;
+    box-sizing: initial;
+    transform: rotate(45deg);
+}
+
+.roundmark {
+    border-radius: 50%;
+}
+
+.container .roundmark:after {
+    border-radius: 50%;
+    background: var(--ntrl-clr-lt);
+    height: 4px;
+    top: 6px;
+}
+
+.fa-star, .fa-star-half-alt {
+    color: var(--star-clr);
+}
+
+.radio-container {
+    display: inline-block;
+}
+
+
+
+
+@media only screen and (min-width: 70em) {
+
+    .filter-options {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .filter-options .filter-list {
+        display: flex;
+    }
+
+    .search {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .search {
+        margin-top: 0.2em;
+        margin-right: 25px;
+    }
+
+    #find {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 90em) {
+
+    .filter-options {
+        justify-content: flex-start;
+    }
+
+    .filter-options fieldset {
+        margin-right: calc(var(--pad-and-gap) * 4);
+    }
+}
