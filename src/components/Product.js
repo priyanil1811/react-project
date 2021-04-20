@@ -1,5 +1,4 @@
-import React, {useState, useContext} from 'react'
-import ProductContext from 'contexts/product'
+import React from 'react'
 import Ratingstar from 'components/Ratingstar'
 import ProductColors from 'components/ProductColors'
 import ProductSize from 'components/ProductSize'
@@ -10,11 +9,6 @@ const Product = (product) => {
     
     const productInfo = product.product;
     const productImg = require(`img/${productInfo.image}`).default;
-    // const { cart, setCart } = useContext(ProductContext)
-
-    // const addToCart = (item) => {
-    //     setCart([...cart, item])
-    // }
 
 
 	return (
@@ -41,7 +35,7 @@ const Product = (product) => {
                 </fieldset>
           </form>
             <footer>
-                <button /*onClick={() => setCart(productInfo)}*/ type="button"><i className="fas fa-shopping-bag"></i> Add to Bag</button>
+                <button type="button"><i className="fas fa-shopping-bag"></i> Add to Bag</button>
                 <button type="button"><i className="fab fa-gratipay"></i> Wishlist</button>
             </footer>
         </article>
