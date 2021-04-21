@@ -22,7 +22,7 @@ const PageShop = () => {
       
       
       // Creat a clone Array
-      let filteredProducts = products;
+      let filteredProducts = [...products];
 
     
       // Check all the filters
