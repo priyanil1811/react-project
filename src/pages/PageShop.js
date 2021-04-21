@@ -46,10 +46,10 @@ const PageShop = () => {
       // Sort if appropriate
       switch (filters.sortBy) {
         case `price-high`:
-          filteredProducts.sort((a, b) => a.newPrice - b.newPrice)
+          filteredProducts.sort((a, b) => b.newPrice - a.newPrice)
           break;
         case `price-low`:
-          filteredProducts.sort((a, b) => b.newPrice - a.newPrice)
+          filteredProducts.sort((a, b) => a.newPrice - b.newPrice)
           break;
       }
       
