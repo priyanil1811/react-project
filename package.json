@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
-    "deploy": "git reset && git add -f dist && git commit -m \"deploy\" && git subtree split --prefix dist -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages && git reset --mixed HEAD~1"
+    "deploy": "npm run build; netlify deploy --prod --dir=dist; lighthouse-badges --urls https://ecomm-project.netlify.app/shop -o badges"
   },
   "keywords": [],
   "author": "",
