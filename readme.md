@@ -18,13 +18,13 @@ A web store application built using React JS.
 
 ## Testing
 
-    Install the project dependencies
-    ```shell
-    npm install
-    ```
+Install the project dependencies
+```shell
+npm install
+```
 
-    Run the application
-    ```shell
-    npm run start
-    ```
+Run the application
+```shell
+npm run start
+```
 
