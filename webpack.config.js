@@ -24,7 +24,7 @@ module.exports = {
 		historyApiFallback: true,
 	},
 	output: {
-		publicPath: `/`
+		publicPath: `auto`
 	},
 	plugins: [
 		new HtmlWebPackPlugin({
