@@ -4,7 +4,6 @@ A web store application built using React JS.
 
 ## Status
 
-
 ### Deployment
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fcd74083-1946-4752-a101-3d9242e7edd1/deploy-status)](https://app.netlify.com/sites/ecomm-project/deploys)
@@ -17,13 +16,15 @@ A web store application built using React JS.
 ![Lighthouse Seo](assets/lighthouse_seo.svg)
 ![Lighthouse Scores](assets/lighthouse.png)
 
-Install the project dependencies
-   ```shell
-   npm install
-   ```
+## Testing
 
-Run the application
-   ```shell
-   npm run start
-   ```
+    Install the project dependencies
+    ```shell
+    npm install
+    ```
+
+    Run the application
+    ```shell
+    npm run start
+    ```
 
