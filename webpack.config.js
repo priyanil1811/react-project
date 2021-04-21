@@ -21,7 +21,9 @@ module.exports = {
 		]
 	},
 	devServer: {
-		historyApiFallback: true,
+		historyApiFallback: {
+			index: `index.html`
+		}
 	},
 	output: {
 		publicPath: `auto`
